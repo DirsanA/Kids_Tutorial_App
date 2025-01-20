@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Group for single selection -->
+    <group android:checkableBehavior="single">
+
+        <!-- Home Menu Item -->
+        <item
+            android:id="@+id/nav_home_t"
+            android:icon="@drawable/nav_home"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/nav_createp"
+            android:icon="@drawable/baseline_podcasts_24"
+            android:title="Upload Video"/>
+        <item
+            android:id="@+id/nav_about_t"
+            android:icon="@drawable/nav_about"
+        android:title="About Us"
+        app:showAsAction="ifRoom" />
+    </group>
+
+    <!-- Separate Logout Item -->
+    <item
+        android:id="@+id/nav_logout_t"
+        android:icon="@drawable/nav_logout"
+    android:title="Log out"
+    app:showAsAction="never" />
+</menu>

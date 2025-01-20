@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#010B28"
+    tools:context=".HomeFragment">
+
+    <!-- Top Icon Buttons Section -->
+    <LinearLayout
+        android:id="@+id/top_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp">
+
+        <ImageButton
+            android:id="@+id/amharic"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:src="@drawable/amharic"
+            android:scaleType="fitCenter"
+            android:contentDescription="Amharic"
+            android:background="@drawable/rounded_button"
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp"
+            android:padding="8dp" />
+
+        <ImageButton
+            android:id="@+id/english"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:src="@drawable/english"
+            android:scaleType="fitCenter"
+            android:contentDescription="English"
+            android:background="@drawable/rounded_button"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp"
+            android:padding="8dp" />
+
+        <ImageButton
+            android:id="@+id/maths"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:src="@drawable/maths"
+            android:scaleType="fitCenter"
+            android:contentDescription="Maths"
+            android:background="@drawable/rounded_button"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp"
+            android:padding="8dp" />
+
+        <ImageButton
+            android:id="@+id/game"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:src="@drawable/game"
+            android:scaleType="fitCenter"
+            android:contentDescription="Game"
+            android:background="@drawable/rounded_button"
+            android:layout_marginStart="8dp"
+            android:elevation="4dp"
+            android:padding="8dp" />
+    </LinearLayout>
+<GridView
+    android:layout_width="match_parent"
+    android:id="@+id/grid_view"
+    android:layout_below="@+id/top_buttons_layout"
+    android:layout_marginTop="12dp"
+    android:layout_height="wrap_content">
+
+</GridView>
+
+</RelativeLayout>

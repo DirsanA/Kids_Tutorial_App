@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kids Tutorial</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="channel_name">Video Upload Notifications</string>
+    <string name="channel_description">Notifications about uploaded videos</string>
+
+
+</resources>

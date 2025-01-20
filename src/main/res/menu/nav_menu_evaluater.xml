@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Group for single selection -->
+    <group android:checkableBehavior="single">
+
+        <!-- Home Menu Item -->
+        <item
+            android:id="@+id/nav_home_e"
+            android:icon="@drawable/nav_home"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/nav_about_e"
+            android:icon="@drawable/nav_about"
+        android:title="About Us"
+        app:showAsAction="ifRoom" />
+    </group>
+
+    <!-- Separate Logout Item -->
+    <item
+        android:id="@+id/add_teachers"
+        android:icon="@drawable/baseline_subscriptions_24"
+    android:title="Add Teachers"
+    app:showAsAction="never" />
+
+    <item
+        android:id="@+id/nav_logout_e"
+        android:icon="@drawable/nav_logout"
+        android:title="Log out"
+        app:showAsAction="never" />
+</menu>

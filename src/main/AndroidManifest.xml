@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions for accessing the internet and reading external storage -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <!-- Scoped Storage Compatibility -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kid"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Login_page"
+        tools:targetApi="31"
+        android:requestLegacyExternalStorage="true">
+
+        <activity android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".MainActivityEvaluater"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".MainActivityTeacher"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true">
+        </activity>
+
+    </application>
+</manifest>
